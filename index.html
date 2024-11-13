@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <!-- ctr+k+c -->
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <!--  -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/btn.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
+
+    <title>Bazinga Jo-Ken-po Edition</title>
+
+
+</head>
+
+<body>
+    
+    <div class="bg-video">
+        <video class="video" autoplay muted loop>
+            <source src="./src/assets/video/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="container__left framed-golden-2">
+            <div class="score_box frame">
+                <span id="score_points">Win : 0 |  Lose : 0</span>
+
+            </div>
+            <div class="menu_avatar">
+                <img id="card-image">
+
+                
+
+            </div>
+            <div class="card_details frame">
+                <p id="card-name">Selecione
+
+                </p>
+                <p id="card-type">uma carta
+
+                </p>                
+            </div>
+
+            <p>Descubra como jogar  <br> pedra, papel, tesoura, lagarto,  Spock!</p>
+
+            <div class="btn__container">
+                
+                <button type="button" class="btn" id="botaoPlay">
+                    
+                    <strong>DICA</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>
+                <audio id="bgm">
+                    <source src="./src/assets/audios/fundo.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container__right">
+            <div class="card-box__container">
+                <div class="card-box framed" id="computer-cards">
+                </div>
+                <!-- cima -->
+                <div class="card-versus__container">
+                    <div class="versus-top">
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </div>
+
+
+                        <img height="100px" src="./src/assets/icons/vs.png" height="180px" width="250px">
+
+                        <div class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </div>
+                        <!-- baixo -->
+                    </div>                    
+                    <div  class="versus-bottom">
+                        <button id="next-duel" id="stars" class="btn" onclick="resetDuel()">GANHOU</button>
+                        
+                    </div>
+                </div>
+                <div class="card-box framed" id="player-cards">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+
+</html>
