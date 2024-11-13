@@ -1,0 +1,68 @@
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Empilha os elementos em colunas */
+    }
+
+    .container__left {
+        width: 100%;
+    }
+
+    .container__right {
+        width: 100%;
+    }
+
+    .bg-video {
+        position: absolute;
+        z-index: -2;
+        overflow: hidden;
+        display: flex;
+        justify-content: bottom;
+    }
+
+    .bg-video .video {
+        display: none;
+    }.card-box__container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../assets/favicon/Favicon.ico');
+        background-position: center;
+        background-color: cadetblue;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+    }
+    
+
+    
+
+    .hidden {
+        display: none;
+    }
+
+    /* Outros ajustes para telas menores */
+    .card-box {
+        height: auto;
+        /* Permite que as cartas se adaptem à altura disponível */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__left,
+    .container__right {
+        width: 100%;
+    }
+
+    .card-box {
+        height: center;
+    }
+
+
+    .card-image {
+        width: 20vw;
+        /* Ajusta a largura da imagem para ocupar 80% da largura da viewport */
+    }
+
+
+}
